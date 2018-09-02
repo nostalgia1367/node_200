@@ -13,7 +13,7 @@ console.warn('--------------node.js버전2');
 console.log(process.versions); // Node.js 버전
 
 // console
-console.log('Number: %d + %d = %d', 1, 2, 3 + 4);
+console.log('Number: %d + ex%d = %d', 1, 2, 3 + 4);
 console.log('String: %s', 'Hello World!');
 console.log('JSON: %j', { name: 'node.js' });
 console.log('String1', 'String2.');

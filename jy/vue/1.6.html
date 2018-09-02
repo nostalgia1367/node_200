@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>vue 시작하기!!</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body>
+
+        <div id="start">
+            <h1>오늘 : {{date.getFullYear()}} - {{parseInt(date.getMonth()) + 1}} - {{date.getDay()}}
+                <br/>
+                {{ yyyymmdd(today) }}
+            </h1>
+        </div>
+
+        <script type="text/javascript">
+        let app = new Vue({     
+            el: '#start',
+            data () {
+                return {
+                    yyyymmdd(dateIn) {
+                        var yyyy = dateIn.getFullYear();
+                        var mm = dateIn.getMonth()+1;
+                        var dd  = dateIn.getDate();
+                        return String(10000*yyyy + 100*mm + dd);
+                    },
+                    today: new Date(),
+                    date : new Date()
+                }
+            },
+
+            
+
+
+        })
+        </script>
+        <script>
+        
+        </script>
+    </body>
+</html>
